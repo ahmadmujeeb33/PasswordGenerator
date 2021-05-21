@@ -68,7 +68,7 @@ function writePassword() {
     }
 
     if(counter>0){
-      for(let i=0; i<parseInt(wordCount);i++){
+      for(let i=0; i<parseInt(wordCount)-counter;i++){
         let index = Math.floor((Math.random() * store.length -1) + 1);
         password = password + store[index];
   
